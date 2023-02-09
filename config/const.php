@@ -1,0 +1,92 @@
+<?php
+return [
+    'MODULE' => [
+        'PROCUREMENT' => [
+            'PROCUREMENT' => '1',
+            'PURCHASE_CHEQUE' => '2',
+            'PURCHASE_LPO' => '3',
+            'ORDER' => '4',
+            'VOUCHER' => '5',
+        ],
+        'TRAVEL' => [
+            'TRAVEL' => '6',
+            'SUBSISTENCE' => '7',
+            'TRANSPORT' => '8',
+        ],
+        
+    ],
+    'REQUISITION_STATUS' => [
+        'PROCUREMENT' => [
+            'REQUISITION_PREPARATION' => 1,
+            'REQUISITION_CHECKING' => 2,
+            'FUNDS_VERIFICATION' => 3,
+            'REQUISITION_APPROVAL' => 4,
+            'QUOTATION_SOURCING' => 5,
+            'PURCHASING' => 6,
+            'CLOSED' => 7,
+            'CANCELED' => 8,
+        ],
+        'PURCHASE_CHEQUE' => [
+            'PURCHASE_REQUISITION_GENERATION' => 10,
+            'FUNDS_VERIFICATION' => 11,
+            'PURCHASE_REQUISITION_APPROVAL' => 12,
+            'FUNDS_APPROVAL' => 13,
+            'SENDING_PAYMENT' => 14,
+            'RECEIVED_RATING' => 15,
+            'CLOSED' => 16,
+            'CANCELED' => 17,
+        ],
+        'PURCHASE_LPO' => [
+            'PURCHASE_REQUISITION_GENERATION' => 20,
+            'FUNDS_VERIFICATION' => 21,
+            'PURCHASE_REQUISITION_APPROVAL' => 22,
+            'FUNDS_APPROVAL' => 23,
+            'LPO_GENERATION' => 24,
+            'ORDER_PROCESSING' => 25,
+            'RECEIVED_RATING' => 26,
+            'CLOSED' => 27,
+            'CANCELED' => 28,
+        ],
+        'ORDER' => [
+            'LPO_GENERATION' => 40,
+            'LPO_CHECKING' => 41,
+            'LPO_FINALIZING' => 42,
+            'GOODS_ITEMS_PROCESSING' => 43,
+            'PAYMENT_PROCESSING' => 44,
+            'CLOSED' => 45,
+            'CANCELED' => 46,
+        ],
+        'VOUCHER' => [
+            'PREPARE' => 50,
+            'CHECKING' => 51,
+            'AUTHORIZATION' => 52,
+            'CHEQUE_PROCESSING' => 53,
+            'PAID' => 54,
+            'CANCELED' => 55,
+        ],
+        'TRAVEL' => [
+            'TRAVEL_PREPARATION' => 70,
+            'TRAVEL_CHECKING' => 71,
+            'SUBSISTENCE_AND_TRANSPORT' => 72,
+            'CLOSED' => 73,
+            'CANCELED' => 74,
+        ],
+
+        'SUBSISTENCE' => [
+            'SUBSISTENCE_GENERATION' => 80,
+            'SUBSISTENCE_APPROVAL' => 81,
+            'FUNDS_APPROVAL' => 82,
+            'APPROVAL' => 83,
+            'CLOSED' => 84,
+            'CANCELED' => 85,
+        ],
+        'TRANSPORT' => [
+            'TRANSPORT_GENERATION' => 90,
+            'TRANSPORT_ALLOCATION' => 91,
+            'TRANSPORT_APPROVAL' => 92,
+            'APPROVAL' =>93,
+            'CLOSED' => 94,
+            'CANCELED' => 95,
+        ],
+    ],
+];

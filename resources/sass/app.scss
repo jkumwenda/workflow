@@ -1,0 +1,30 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// FontAwesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+// Select2
+@import "select2/src/scss/core";
+
+// jQuery UI
+@import '~jquery-ui/themes/base/all.css';
+
+// DataTable
+@import '~datatables.net-bs4/css/dataTables.bootstrap4.css';
+
+// StarRating
+@import '~bootstrap-star-rating/css/star-rating.css';
+@import '~bootstrap-star-rating/themes/krajee-fas/theme.css';
+
+// Daterangepicker
+@import '~daterangepicker/daterangepicker.css';

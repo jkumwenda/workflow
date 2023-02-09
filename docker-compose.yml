@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  rplus-php-apache:
+    build: ./.dockerconfig
+    container_name: "rplus-php-apache"
+    ports:
+      - "8080:80"
+    restart: always
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    links:
+    - rplus-mysql
+    depends_on:
+    - rplus-mysql
+    command: bash -c "chmod -R 777 /var/www/html/storage && apache2-foreground"
+  rplus-mysql:
+    image: mysql:8.0.29
+    container_name: "rplus-mysql"
+    ports:
+      - 33306:3306
+    restart: always
+    volumes:
+      - ${LOCAL_MYSQL_DATA_PATH:-./.dockerconfig}/mysql-data:/var/lib/mysql
+      - ./.dockerconfig/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+    environment:
+      MYSQL_DATABASE: rplus2
+      MYSQL_USER: rplus2user
+      MYSQL_PASSWORD: rplus2password
+      MYSQL_ROOT_PASSWORD: password
+      TZ: Africa/Blantyre
